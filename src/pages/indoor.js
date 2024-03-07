@@ -5,7 +5,7 @@ import { Button, Divider } from 'antd'
 import './indoor.css'
 
 let lng = 121.597368,
-  lat = 31.237085
+  lat = 31.238085
 const L = window.L
 const LeafletMap = () => {
   const [visible, setVisible] = useState(false)
@@ -23,7 +23,7 @@ const LeafletMap = () => {
       // let baseLayers = { test }
       let map = L.map('map', {
         center: [lat, lng],
-        zoom: 18,
+        zoom: 17,
         layers: [test],
         zoomControl: false,
       })
